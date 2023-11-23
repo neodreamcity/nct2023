@@ -39,7 +39,7 @@ def goodmanKruska_tau_y(df,x:str,y:str)->float:
     """取得条件次数表"""
     cft=pd.crosstab(df[y],df[x],margins=True)
     """取得全部个案数目"""
-    n=cft.at['ALL','ALL']
+    n=cft.at['All','All']
     """初始化变量"""
     E_1 = E_2 = tau_y = 0
 
